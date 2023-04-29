@@ -12,7 +12,7 @@ export default function Nav() {
             <ul>
                 <li>Home</li>
                 <li>My Journey</li>
-                <li className='cv--btn'>My CV</li>
+                <a href='https://drive.google.com/file/d/10Iu_arSNsHxNgCBM-ZA-VLTstVD22Mpy/view?usp=sharing' target='_blank'><li className='cv--btn'>My CV</li></a>
             </ul>
             
         </nav>
