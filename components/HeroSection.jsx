@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function HeroSection() {
+    console.log(window.innerWidth)
     return (
         <section className='hero--section'>
             <h1>frontend<span> Engineer</span></h1>

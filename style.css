@@ -105,7 +105,7 @@ nav .fa-bars:hover,
 
 .hero--section {
     width: 90vw;
-    height: 35vh;
+    height: auto;
     margin: 0 auto;
     padding: 1em;
     border-radius: 10px;
@@ -133,8 +133,7 @@ nav .fa-bars:hover,
 }
 
 .hero--section img {
-    height: 129px;
-    width: 125px;
+    width: 20%;
     border-radius: 20px;
 }
 
@@ -146,6 +145,7 @@ nav .fa-bars:hover,
 .hero--section p {
     font-size: 0.85rem;
     font-weight: 700;
+    width: 100%;
     line-height: 1.5;
     text-align: left;
     align-self: center;
@@ -312,7 +312,6 @@ footer .socials-n-rights {
     }
 
     .hero--section {
-        height: 50vh;
         width: 95vw;
         padding: 2em 3.5em;
     }
