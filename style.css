@@ -152,7 +152,6 @@ nav .fa-bars:hover,
     display: block;
     margin: 0 auto 0 0;
     padding: 0 2em;
-    /* width: fit-content; */
     color:#064034;
     font-weight: 700;
     border-radius: 5px;
@@ -351,8 +350,12 @@ footer .socials-n-rights {
         font-size: 2rem;
     }
 
-    .hero--section p, .profile--bio-mail a  {
+    .hero--section p {
         font-size: 1rem;
+    }
+
+    .profile--bio-mail a {
+        font-size: 1.5rem;
     }
 
     .main--layout {
