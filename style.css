@@ -148,19 +148,18 @@ nav .fa-bars:hover,
     align-self: center;
 }
 
-.profile--bio-mail a {
-    display: block;
-    margin: 0 auto 0 0;
-    padding: 0 2em;
+.contact-me {
+    width: fit-content;
+    border: none;
+    padding: 0.5em 1em;
     color:#064034;
     font-weight: 700;
     border-radius: 5px;
-    text-decoration: none;
     background-color: #FFFFFF;
     cursor: pointer;
 }
 
-.profile--bio-mail a:hover {
+.contact-me:hover {
     background-color: #FFFFFF33;
 }
 
@@ -354,7 +353,7 @@ footer .socials-n-rights {
         font-size: 1rem;
     }
 
-    .profile--bio-mail a {
+    .contact-me {
         font-size: 1.5rem;
     }
 

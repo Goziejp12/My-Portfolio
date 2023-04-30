@@ -15,7 +15,14 @@ export default function HeroSection() {
                         I’m always ready to learn and eager to help a progressive 
                         team achieve its objectives.
                     </p>
-                    <a href='mailto:chigoziemaduka401@gmail.com' target='_blank'>Contact me</a>
+                    <button
+                        className='contact-me'
+                        onClick={
+                            () => window.location.href='mailto:chigoziemaduka401@gmail.com'
+                        } 
+                    >
+                        Contact me
+                    </button>
                 </div>
             </div>
             
