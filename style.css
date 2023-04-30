@@ -13,7 +13,7 @@ body, html {
 nav {
     font-size: 0.85rem;
     display: flex;
-    padding: 2em;
+    padding: 1em 2.5em;
 }
 
 nav a {
@@ -35,10 +35,6 @@ nav span {
 
 nav ul {
     display: none;
-}
-
-.mobile-ul {
-    display: flex;
 }
 
 nav .fa-bars {
@@ -104,16 +100,16 @@ nav li:hover, nav span:hover, footer i:hover {
 }
 
 .hero--section {
-    height: 50vh;
-    width: 95vw;
+    width: 450px;
+    height: 35vh;
     margin: 0 auto;
-    padding: 0 2.25em;
+    padding: 1em;
     border-radius: 10px;
     background: linear-gradient(90deg, #02050C 3.4%, #064034 97.23%);
 }
 
 .hero--section h1 {
-    font-size: 4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #FAF6F6;
     text-transform: uppercase;
@@ -125,7 +121,7 @@ nav li:hover, nav span:hover, footer i:hover {
 }
 
 .hero--section h2 {
-    font-size: 2rem;
+    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.42em;
     text-transform: uppercase;
@@ -144,7 +140,7 @@ nav li:hover, nav span:hover, footer i:hover {
 }
 
 .hero--section p {
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     font-weight: 700;
     line-height: 1.5;
     text-align: left;
@@ -152,20 +148,21 @@ nav li:hover, nav span:hover, footer i:hover {
     color: #FAF6F680;
 }
 
-main {
-    padding: 0 2.25em;
-}
-
 .main--layout {
     display: flex;
-    overflow: auto;
-    padding: 4em 2.25em;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5em;
     justify-content: center;
 }
 
-main h1 {
+.main-header {
     font-size: 2.25rem;
     font-weight: 700;
+    margin: 1em 0 0 0;
+    text-align: center;
     letter-spacing: 0.1em;
     background: -webkit-linear-gradient(90deg, #00A482 0%, #4400DA 100%);
     -webkit-background-clip: text;
@@ -232,11 +229,11 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 168px;
-    width: 90vw;
+    width: 450px;
     border-radius: 10px;
     background: #191A1F;
     margin: 0 auto 2.4em;
-    padding: 2.25em;
+    padding: 1em;
 }
 
 footer .text {
@@ -246,10 +243,10 @@ footer .text {
 }
 
 footer h1 {
+    font-size: 1.5rem;
     margin: 0 0 1em 0;
     display: flex;
     flex-direction: column;
-    font-size: 2.25rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -260,7 +257,7 @@ footer h1 span {
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 700;
     font-family: Inter;
 }
@@ -296,7 +293,10 @@ footer .socials-n-rights {
 @media (min-width: 768px) {
     nav {
         font-size: 1.5rem;
-        padding: 2.4em 4.7em;
+        max-width: 1264px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     nav ul {
@@ -313,17 +313,45 @@ footer .socials-n-rights {
     .hero--section {
         height: 50vh;
         width: 95vw;
-        margin: 0 auto;
-        padding: 0 2.25em;
-        border-radius: 10px;
-        background: linear-gradient(90deg, #02050C 3.4%, #064034 97.23%);
+        padding: 2em 3.5em;
+    }
+
+    .hero--section h1 {
+        font-size: 4rem;
+    }
+
+    .hero--section h2 {
+        font-size: 2rem;
+    }
+
+    .hero--section p {
+        font-size: 1.5rem;
     }
 
     .main--layout {
         display: grid;
-        grid-template-columns: repeat(3, 450px);
-        padding: 4em 2.25em;
-        row-gap: 4em;
+        grid-template-columns: repeat(3, 400px);
+        margin: 0 auto;
+        gap: 2em;
         justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    footer {
+        max-width: 1264px;
+        width: 100%;
+        margin: 0 auto 2.4em;
+        padding: 2.25em;
+    }
+
+    footer h1 {
+        font-size: 2.25rem;
+    }
+
+    footer p {
+        font-size: 1rem;
     }
 }

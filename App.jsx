@@ -36,6 +36,7 @@ export default function App() {
             />
             {isMobileView && <Sidebar handleXmarkClick={handleXmarkClick}/>}
             <HeroSection />
+            <h1 className='main-header'>My Completed Projects</h1>
             <div className='main--layout'>
                 {items}
             </div>

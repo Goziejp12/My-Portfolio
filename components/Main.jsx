@@ -4,7 +4,6 @@ export default function Main(props) {
     // console.log(props)
     return (
         <main>
-            {/* <h1>My Completed Projects</h1> */}
             <div className='item--area'>
                 <h2>{props.items.title}</h2>
                 <img src={`./images/${props.items.image}`} />
