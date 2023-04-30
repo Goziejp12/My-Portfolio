@@ -7,8 +7,20 @@ export default function Main(props) {
                 <h2>{props.items.title}</h2>
                 <img src={`./images/${props.items.image}`} />
                 <div className='btn'>
-                    <a className='web' target='_blank' href={props.items.url}>View Website</a>
-                    <a className='git' target='_blank' href={props.items.github}>Github Repo</a>
+                    <a 
+                        className='web' 
+                        target='_blank' 
+                        href={props.items.url}
+                    >
+                        View Website
+                    </a>
+                    <a 
+                        className='git' 
+                        target='_blank' 
+                        href={props.items.github}
+                    >
+                        Github Repo
+                    </a>
                 </div>
             </div>
         </main>

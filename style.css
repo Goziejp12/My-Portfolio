@@ -81,6 +81,7 @@ nav .fa-bars:hover,
 .sidebar ul {
     display: inline;
     font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -189,7 +190,7 @@ nav .fa-bars:hover,
     margin: 1em 0 0 0;
     text-align: center;
     letter-spacing: 0.1em;
-    background: -webkit-linear-gradient(90deg, #00A482 0%, #4400DA 100%);
+    background: -webkit-linear-gradient(90deg, #00A482 0%, #FFFFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -229,13 +230,12 @@ main .btn {
 
 main .btn .web, main .btn .git {
     border-radius: 5px;
-    padding: 0 0.3125em;
-    color: #FFFFFF;
+    padding: 0.2em 1em;
     text-decoration: none;
 }
 
 main .btn .web:hover{
-    background: #0F3BB833;
+    background: #FFFFFF33;
 }
 
 main .btn .git:hover {
@@ -243,10 +243,12 @@ main .btn .git:hover {
 }
 
 main .btn .web {
-    background: #0F3BB8; 
+    color: #00A483;
+    background: #FFFFFF; 
 }
 
 main .btn .git {
+    color: #FFFFFF;
     background: #00A483;
 }
 
