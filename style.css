@@ -228,7 +228,6 @@ main .btn .git {
 footer {
     display: flex;
     justify-content: space-between;
-    /* height: 168px; */
     width: 90vw;
     border-radius: 10px;
     background: #191A1F;
@@ -293,8 +292,6 @@ footer .socials-n-rights {
 @media (min-width: 768px) {
     nav {
         font-size: 1.5rem;
-        max-width: 1264px;
-        width: 100%;
         margin: 0 auto;
         padding: 0;
     }
@@ -330,7 +327,8 @@ footer .socials-n-rights {
 
     .main--layout {
         display: grid;
-        grid-template-columns: repeat(3, 400px);
+        grid-template-columns: repeat(3, 1fr);
+        width: 90vw;
         margin: 0 auto;
         gap: 2em;
         justify-content: center;
@@ -341,9 +339,6 @@ footer .socials-n-rights {
     }
 
     footer {
-        max-width: 1264px;
-        width: 100%;
-        margin: 0 auto 2.4em;
         padding: 2.25em;
     }
 
@@ -353,5 +348,14 @@ footer .socials-n-rights {
 
     footer p {
         font-size: 1rem;
+    }
+
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    body {
+        padding-bottom: 2.4em;
     }
 }

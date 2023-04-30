@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className='container'>
             <div className='text'>
                 <h1>I believe in<span>hardwork</span></h1>
                 <p>chigoziemaduka401@gmail.com</p>
