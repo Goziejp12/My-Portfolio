@@ -14,7 +14,7 @@ export default function Nav(props) {
             <ul>
                 <li className='desktop-menu'>Home</li>
                 <li className='desktop-menu'>My Journey</li>
-                <a href='https://drive.google.com/file/d/10Iu_arSNsHxNgCBM-ZA-VLTstVD22Mpy/view?usp=sharing' target='_blank'><li className='cv--btn'>My CV</li></a>
+                <a href='https://drive.google.com/file/d/10Iu_arSNsHxNgCBM-ZA-VLTstVD22Mpy/view?usp=sharing' target='_blank'><li className='cv--btn'>My Resume</li></a>
             </ul>
         </nav>
     )
