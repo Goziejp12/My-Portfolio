@@ -150,7 +150,7 @@ nav .fa-bars:hover,
 
 .profile--bio-mail a {
     padding: 0 2em;
-    width: fit-content;
+    /* width: fit-content; */
     color:#064034;
     font-weight: 700;
     border-radius: 5px;
