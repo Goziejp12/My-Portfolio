@@ -1,11 +1,7 @@
 import React from 'react'
 
 export default function Nav(props) {
-    function handlePortfolioClick() {
-        return (
-            window.location.href = '/'
-        )
-    }
+    const handlePortfolioClick = () => (window.location.href = '/')
     
     return (
         <nav className='container'>
@@ -17,7 +13,7 @@ export default function Nav(props) {
             </div>
             <i className="fa-solid fa-bars" onClick={props.handleClick}></i>
             <ul>
-                <li className='desktop-menu'>Home</li>
+                <li className='desktop-menu' onClick={handlePortfolioClick}>Home</li>
                 <li className='desktop-menu'>My Journey</li>
                 <a href='https://drive.google.com/file/d/10Iu_arSNsHxNgCBM-ZA-VLTstVD22Mpy/view?usp=sharing' target='_blank'><li className='cv--btn'>My Resume</li></a>
             </ul>
