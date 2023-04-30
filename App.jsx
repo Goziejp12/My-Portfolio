@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from './components/Nav'
 import HeroSection from './components/HeroSection'
 import Main from './components/Main'
 import Footer from './components/Footer'
+import Sidebar from './components/Sidebar'
 import data from './data'
 
 export default function App() {
-    // console.log(data)
+    const [isMobileView, setIsMobileView] = useState(false)
+
+    function handleClick() {
+        return (
+            setIsMobileView(prevIsMobileView => !prevIsMobileView)
+        )
+    }
+
+    function handleXmarkClick() {
+        return (
+            setIsMobileView(prevIsMobileView => !prevIsMobileView)
+        )
+    }
+
     const items = data.map(item => {
         return (
             <Main 
@@ -17,7 +31,10 @@ export default function App() {
     })
     return (
         <>
-            <Nav />
+            <Nav 
+                handleClick={handleClick}
+            />
+            {isMobileView && <Sidebar handleXmarkClick={handleXmarkClick}/>}
             <HeroSection />
             <div className='main--layout'>
                 {items}

@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function Nav() {
+export default function Nav(props) {
+    
     return (
         <nav>
             <div className='nav--left'>
@@ -9,12 +10,12 @@ export default function Nav() {
                 </svg>
                 <span>My Portfolio</span>
             </div>
+            <i className="fa-solid fa-bars" onClick={props.handleClick}></i>
             <ul>
-                <li>Home</li>
-                <li>My Journey</li>
+                <li className='desktop-menu'>Home</li>
+                <li className='desktop-menu'>My Journey</li>
                 <a href='https://drive.google.com/file/d/10Iu_arSNsHxNgCBM-ZA-VLTstVD22Mpy/view?usp=sharing' target='_blank'><li className='cv--btn'>My CV</li></a>
             </ul>
-            
         </nav>
     )
 }

@@ -11,8 +11,9 @@ body, html {
 }
 
 nav {
+    font-size: 0.85rem;
     display: flex;
-    padding: 2.4em 4.7em;
+    padding: 2em;
 }
 
 nav a {
@@ -27,21 +28,27 @@ nav a {
 }
 
 nav span {
-    font-size: 1.5rem;
     font-weight: 700;
     align-self: center;
     cursor: pointer;
 } 
 
 nav ul {
+    display: none;
+}
+
+.mobile-ul {
     display: flex;
-    gap: 1em;
-    align-self: center;
+}
+
+nav .fa-bars {
+    font-size: 1.5rem;
     margin-left: auto;
+    align-self: center;
+    cursor: pointer;
 }
 
 nav li {
-    font-size: 1.5rem;
     font-weight: 700;
     list-style: none;
     cursor: pointer;
@@ -60,6 +67,40 @@ nav li:hover, nav span:hover, footer i:hover {
 
 .cv--btn:hover {
     background: linear-gradient(90deg, #00A48233 0%, #4400DA33 100%);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #00A483;
+    width: 50vw;
+    height: 100vh;
+}
+
+.sidebar ul {
+    display: inline;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sidebar li {
+    cursor: pointer;
+    list-style: none;
+}
+
+.sidebar li:hover {
+    background-color: #064034;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .fa-xmark {
+    margin: 1em;
+    cursor: pointer;
 }
 
 .hero--section {
@@ -116,10 +157,9 @@ main {
 }
 
 .main--layout {
-    display: grid;
-    grid-template-columns: repeat(3, 450px);
+    display: flex;
+    overflow: auto;
     padding: 4em 2.25em;
-    row-gap: 4em;
     justify-content: center;
 }
 
@@ -251,4 +291,39 @@ footer .socials-n-rights {
     display: flex;
     flex-direction: column;
     align-self: center;
+}
+
+@media (min-width: 768px) {
+    nav {
+        font-size: 1.5rem;
+        padding: 2.4em 4.7em;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1em;
+        align-self: center;
+        margin-left: auto;
+    }
+
+    nav .fa-bars {
+        display: none;
+    }
+
+    .hero--section {
+        height: 50vh;
+        width: 95vw;
+        margin: 0 auto;
+        padding: 0 2.25em;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #02050C 3.4%, #064034 97.23%);
+    }
+
+    .main--layout {
+        display: grid;
+        grid-template-columns: repeat(3, 450px);
+        padding: 4em 2.25em;
+        row-gap: 4em;
+        justify-content: center;
+    }
 }
