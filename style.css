@@ -50,8 +50,12 @@ nav li {
     cursor: pointer;
 }
 
-nav li:hover, nav span:hover, footer i:hover {
-    color: #FAF6F633;
+nav li:hover, 
+nav span:hover, 
+footer i:hover, 
+nav .fa-bars:hover, 
+.sidebar .fa-xmark:hover {
+    color: #FFFFFF33;
 }
 
 .cv--btn {  
