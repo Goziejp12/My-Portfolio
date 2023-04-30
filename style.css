@@ -149,6 +149,8 @@ nav .fa-bars:hover,
 }
 
 .profile--bio-mail a {
+    /* display: block; */
+    margin: 0 auto 0 0;
     padding: 0 2em;
     /* width: fit-content; */
     color:#064034;
