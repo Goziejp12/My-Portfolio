@@ -142,6 +142,27 @@ nav .fa-bars:hover,
     gap: 1em;
 }
 
+.profile--bio-mail {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.profile--bio-mail a {
+    padding: 0 1em;
+    width: fit-content;
+    color:#064034;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.profile--bio-mail a:hover {
+    background-color: #FFFFFF33;
+}
+
 .hero--section p {
     font-size: 0.65rem;
     font-weight: 700;
@@ -329,6 +350,10 @@ footer .socials-n-rights {
     }
 
     .hero--section p {
+        font-size: 1.5rem;
+    }
+
+    .profile--bio-mail a {
         font-size: 1.5rem;
     }
 
