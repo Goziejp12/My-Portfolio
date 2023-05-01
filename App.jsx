@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Nav from './components/Nav'
 import HeroSection from './components/HeroSection'
 import Main from './components/Main'
-import Footer from './components/Footer'
+import FooterDesktopView from './components/FooterDesktopView'
+import FooterMobileView from './components/FooterMobileView'
 import Sidebar from './components/Sidebar'
 import data from './data'
 
@@ -40,7 +41,10 @@ export default function App() {
             <div className='main--layout'>
                 {items}
             </div>
-            <Footer />
+            <FooterDesktopView />
+            <div className='disable-footer-mobile'>
+                <FooterMobileView />
+            </div>
         </>
     )
 }
