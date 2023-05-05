@@ -150,6 +150,7 @@ nav .fa-bars:hover,
 }
 
 .contact-me {
+    font-family: inherit;
     width: fit-content;
     border: none;
     padding: 0.5em 1em;
