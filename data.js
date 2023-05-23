@@ -1,5 +1,13 @@
 export default [
     {
+        id: 0,
+        title: 'Quiz web App',
+        url: 'https://quizzical-app-navy.vercel.app/',
+        image: 'QuizApp.png',
+        github: 'https://github.com/Goziejp12/Quizzical-App.git'
+    },
+
+    {
         id: 1,
         title: 'AirBnb Online Experience Clone',
         url: 'https://air-bnb-clone-snowy.vercel.app/',
